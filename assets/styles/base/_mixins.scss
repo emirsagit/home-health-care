@@ -1,0 +1,13 @@
+@mixin transition($property, $duration, $config) {
+  transition: $property $duration $config;
+}
+
+@mixin hover($property, $color) {
+  #{$property}: rgba($color, 0.8);
+
+  @include transition($property, 0.4s, ease-in);
+
+  &:hover {
+    #{$property}: $color;
+  }
+}

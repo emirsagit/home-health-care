@@ -1,0 +1,154 @@
+/**
+ * Global
+ */
+/* color */
+/* variables */
+/**
+ * Components
+ */
+/**
+ * Globals
+ */
+body {
+  font-family: "Lato", sans-serif;
+  font-size: 100%;
+  color: #272a31;
+  background: #f7f7f7;
+  line-height: 150%;
+  margin: 0;
+}
+body * {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #272a31;
+  font-weight: 600;
+}
+
+section,
+header,
+footer {
+  padding: 5%;
+}
+
+header {
+  background: url("../img/background.jpg") no-repeat;
+  filter: grayscale(90%);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+
+button {
+  text-decoration: none;
+  display: inline-block;
+  border: none;
+  letter-spacing: 0.1em;
+  font-size: 1.1em;
+  background: none;
+  cursor: pointer;
+}
+
+.layout-grid {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.layout-grid__column {
+  flex-basis: 768px;
+}
+
+@media (min-width: 768px) {
+  .layout-grid__column {
+    flex: 1;
+    flex-basis: auto;
+  }
+}
+.nav {
+  width: 100%;
+}
+.nav__button {
+  color: rgba(39, 42, 49, 0.8);
+  transition: color 0.4s ease-in;
+  z-index: 10;
+  position: relative;
+}
+.nav__button:hover {
+  color: #272a31;
+}
+
+.button {
+  background-color: rgba(236, 82, 66, 0.8);
+  transition: background-color 0.4s ease-in;
+  text-decoration: none;
+  display: inline-block;
+  border: none;
+  padding: 0.5em 0.8em;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  font-size: 1.1em;
+  border-radius: 0.3em;
+}
+.button:hover {
+  background-color: #ec5242;
+}
+.button--sm {
+  font-size: 0.8em;
+}
+
+.icons__1 {
+  position: absolute;
+  top: 2vh;
+  left: 5%;
+}
+.icons__2 {
+  position: absolute;
+  top: 5vh;
+  left: 40%;
+}
+.icons__3 {
+  position: absolute;
+  top: 25vh;
+  left: 80%;
+}
+.icons__4 {
+  position: absolute;
+  top: 50vh;
+  left: 18%;
+}
+.icons__5 {
+  position: absolute;
+  top: 50vh;
+  left: 80%;
+}
+.icons__6 {
+  position: absolute;
+  top: 50vh;
+  left: 80%;
+}
+.icons__7 {
+  position: absolute;
+  top: 30vh;
+  left: 10%;
+}
+.icons__8 {
+  position: absolute;
+  top: 27vh;
+  left: 35%;
+}
+.icons__9 {
+  position: absolute;
+  top: 80vh;
+  left: 20%;
+}
+.icons__10 {
+  position: absolute;
+  top: 80vh;
+  left: 70%;
+}
+
+/*# sourceMappingURL=app.css.map */

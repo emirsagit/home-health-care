@@ -1,0 +1,16 @@
+.layout-grid {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.layout-grid__column {
+  flex-basis: 768px;
+}
+
+@media (min-width: 768px) {
+  .layout-grid__column {
+    flex: 1;
+    flex-basis: auto;
+  }
+}

@@ -1,0 +1,28 @@
+/**
+ * Global
+ */
+
+/* color */
+$primary: #ec5242;
+$secondary: #d3d3d3;
+$third: #272a31;
+
+$bg-primary: #f7f7f7;
+$bg-secondary: $secondary;
+$bg-third: $third;
+
+/* variables */
+$body-bg-color: $bg-primary;
+$body-text-color: $third;
+$body-font-family: 'Lato', sans-serif;
+$body-font-size: 100%;
+$body-line-height: 150%;
+$section-padding-mobile: 5%;
+$section-padding-desktop: 15%;
+
+$link-color: $third;
+$link-weight: 600;
+
+/**
+ * Components
+ */
