@@ -1,0 +1,24 @@
+.topnav {
+  background-color: $third;
+  padding: 0 $section-padding-desktop;
+  display: none;
+  justify-content: flex-end;
+  align-items: center;
+
+  &__link {
+    color: $white;
+    padding-right: 2%;
+  }
+}
+
+@media (min-width: 768px) {
+  .topnav {
+    display: flex;
+  }
+}
+
+@media (min-width: 1200px) {
+  .topnav {
+    padding: 0 $section-padding-desktop-large;
+  }
+}

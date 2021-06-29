@@ -45,3 +45,19 @@
   bottom: 0;
   right: 0;
 }
+
+@media (min-width: 768px) {
+  .title {
+    padding: 10% 25% 10% $section-padding-desktop;
+  }
+
+  .title__slogan--about {
+    display: none;
+  }
+}
+
+@media (min-width: 1200px) {
+  .title {
+    padding: 10% 25% 10% $section-padding-desktop-large;
+  }
+}

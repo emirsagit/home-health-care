@@ -2,7 +2,7 @@
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  gap: 4%;
+  gap: 3%;
   justify-content: center;
 
   &__column {
@@ -17,8 +17,13 @@
   }
 }
 
-@media (min-width: 992px) {
-  .layout-grid--features {
+@media (min-width: 1200px) {
+  .layout-grid--col-features {
     flex: 1;
+    height: 100%;
+  }
+
+  .layout-grid--features {
+    gap: 1%;
   }
 }

@@ -22,3 +22,10 @@
     margin-bottom: 5%;
   }
 }
+
+@media (min-width: 768px) {
+  .partner__item {
+    margin-bottom: 0;
+    flex: 1;
+  }
+}

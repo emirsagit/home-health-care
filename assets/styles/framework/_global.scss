@@ -19,6 +19,11 @@ body {
 a {
   color: $link-color;
   font-weight: $link-weight;
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
 }
 
 section,
@@ -59,5 +64,21 @@ hr {
 @media (min-width: 768px) {
   body {
     font-size: 150%;
+  }
+
+  section,
+  footer {
+    padding: 5% $section-padding-desktop;
+  }
+
+  .global-hamburger {
+    display: none;
+  }
+}
+
+@media (min-width: 1200px) {
+  section,
+  footer {
+    padding: 5% $section-padding-desktop-large;
   }
 }

@@ -1,3 +1,53 @@
 .nav {
-  width: 100%;
+  display: none;
+  background: $white;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 2px 5px 5px rgba($color: $third, $alpha: 0.5);
+
+  &__logo {
+    width: 20%;
+    height: auto;
+  }
+
+  &__list {
+    width: 80%;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &__item {
+    margin-left: 3%;
+  }
+
+  &__link {
+    font-size: 0.8em;
+    padding: 0.4em 2em;
+    cursor: pointer;
+  }
+
+  &__link--border {
+    border: 4px solid $primary;
+  }
+
+  &__link:hover {
+    @include transition(color, 0.6s, ease-in-out);
+    @include transition(background, 0.3s, ease-in-out);
+
+    background: $primary;
+    color: $white;
+  }
+}
+
+@media (min-width: 768px) {
+  .nav {
+    display: flex;
+    padding: 0.5% $section-padding-desktop;
+  }
+}
+
+@media (min-width: 1200px) {
+  .nav {
+    padding: 0.5% $section-padding-desktop-large;
+  }
 }
