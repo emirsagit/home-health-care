@@ -2,15 +2,23 @@
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-}
+  gap: 4%;
+  justify-content: center;
 
-.layout-grid__column {
-  flex-basis: 768px;
+  &__column {
+    flex-basis: 768px;
+  }
 }
 
 @media (min-width: 768px) {
   .layout-grid__column {
-    flex: 1;
+    width: 48%;
     flex-basis: auto;
+  }
+}
+
+@media (min-width: 992px) {
+  .layout-grid--features {
+    flex: 1;
   }
 }

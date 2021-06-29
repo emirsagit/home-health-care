@@ -1,0 +1,42 @@
+.features {
+  background: url('../img/background-gray.png') no-repeat;
+  background-size: cover;
+
+  &__title {
+    color: white;
+    text-align: center;
+  }
+
+  &__button {
+    margin: 10% 5% 5% 5%;
+    width: 80%;
+  }
+}
+
+.features-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.8em;
+  margin-top: 0.8em;
+  background: rgba($color: #fff, $alpha: 0.1);
+  padding: 0.8em;
+
+  &__title {
+    color: $primary;
+    font-size: 1.1em;
+    flex-basis: 30%;
+  }
+
+  &__p {
+    color: $white;
+    font-size: 0.8em;
+    flex-basis: 50%;
+  }
+}
+
+@media (min-width: 768px) {
+  .features-item {
+    flex-direction: column;
+  }
+}

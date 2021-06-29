@@ -1,0 +1,53 @@
+.team {
+  &__wrapper {
+    display: flex;
+    gap: 4%;
+    margin-bottom: 10%;
+    position: relative;
+  }
+
+  &__image-wrapper {
+    width: 40%;
+    position: relative;
+  }
+
+  &__image {
+    width: 90%;
+    height: auto;
+    position: relative;
+    padding: 8% 0 0 8%;
+    z-index: 10;
+  }
+
+  &__content {
+    width: 56%;
+  }
+
+  &__image-span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+  }
+
+  &__title {
+    font-weight: 800;
+    letter-spacing: 1px;
+  }
+
+  &__spesification {
+    color: $primary;
+  }
+
+  &__p {
+    font-size: 0.8em;
+    line-height: 120%;
+  }
+
+  &__hr {
+    width: 20%;
+    color: $secondary;
+    margin: 4% 0;
+  }
+}

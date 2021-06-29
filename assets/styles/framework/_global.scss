@@ -22,17 +22,8 @@ a {
 }
 
 section,
-header,
 footer {
   padding: $section-padding-mobile;
-}
-
-header {
-  background: url('../img/background.jpg') no-repeat;
-  filter: grayscale(90%);
-  background-position: center;
-  background-size: cover;
-  height: 100vh;
 }
 
 button {
@@ -43,4 +34,30 @@ button {
   font-size: 1.1em;
   background: none;
   cursor: pointer;
+}
+
+hr {
+  width: 10%;
+  margin: 3% auto;
+  color: $primary;
+}
+
+.global-hamburger {
+  @include hover(color, $third);
+
+  z-index: 10;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 2% 5%;
+}
+
+.text-center {
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  body {
+    font-size: 150%;
+  }
 }
