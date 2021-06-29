@@ -1,0 +1,19 @@
+.approving {
+  background: $white;
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+
+  &__time {
+    font-weight: 900;
+  }
+
+  &__image {
+    width: 90%;
+    height: auto;
+    padding: 5%;
+    border: 2px solid $secondary;
+    margin-top: 3%;
+  }
+}
