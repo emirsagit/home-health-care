@@ -2,7 +2,7 @@
   background: $white;
   text-align: center;
   border-top: 2px solid $secondary;
-  padding-top: 10%;
+  padding-top: 5%;
 
   &__p {
     line-height: 120%;
@@ -11,7 +11,7 @@
 
   &__wrapper {
     position: relative;
-    margin: 5% 0;
+    margin: 5% 0 0 0;
   }
 
   &__wrapper::after {

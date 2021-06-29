@@ -17,3 +17,9 @@
     margin-top: 3%;
   }
 }
+
+@media (min-width: 768px) {
+  .approving__image {
+    width: 50%;
+  }
+}

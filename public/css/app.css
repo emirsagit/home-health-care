@@ -1,15 +1,11 @@
 /**
  * Global
  */
-
 /* color */
-
 /* variables */
-
 /**
  * Components
  */
-
 /**
  * Globals
  */
@@ -21,7 +17,6 @@ body {
   line-height: 150%;
   margin: 0;
 }
-
 body * {
   margin: 0;
   padding: 0;
@@ -30,6 +25,11 @@ body * {
 a {
   color: #272a31;
   font-weight: 600;
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
 }
 
 section,
@@ -62,7 +62,6 @@ hr {
   left: 0;
   padding: 2% 5%;
 }
-
 .global-hamburger:hover {
   color: rgba(39, 42, 49, 0.8);
 }
@@ -75,8 +74,22 @@ hr {
   body {
     font-size: 150%;
   }
-}
 
+  section,
+footer {
+    padding: 5% 10%;
+  }
+
+  .global-hamburger {
+    display: none;
+  }
+}
+@media (min-width: 1200px) {
+  section,
+footer {
+    padding: 5% 12%;
+  }
+}
 h1,
 .h1 {
   font-size: 2em;
@@ -106,10 +119,9 @@ h4,
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  gap: 4%;
+  gap: 3%;
   justify-content: center;
 }
-
 .layout-grid__column {
   flex-basis: 768px;
 }
@@ -120,17 +132,83 @@ h4,
     flex-basis: auto;
   }
 }
-
-@media (min-width: 992px) {
-  .layout-grid--features {
+@media (min-width: 1200px) {
+  .layout-grid--col-features {
     flex: 1;
+    height: 100%;
+  }
+
+  .layout-grid--features {
+    gap: 1%;
   }
 }
-
 .nav {
-  width: 100%;
+  display: none;
+  background: #fff;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 2px 5px 5px rgba(39, 42, 49, 0.5);
+}
+.nav__logo {
+  width: 20%;
+  height: auto;
+}
+.nav__list {
+  width: 80%;
+  display: flex;
+  justify-content: flex-end;
+}
+.nav__item {
+  margin-left: 3%;
+}
+.nav__link {
+  font-size: 0.8em;
+  padding: 0.4em 2em;
+  cursor: pointer;
+}
+.nav__link--border {
+  border: 4px solid #fe4e37;
+}
+.nav__link:hover {
+  transition: color 0.6s ease-in-out;
+  transition: background 0.3s ease-in-out;
+  background: #fe4e37;
+  color: #fff;
 }
 
+@media (min-width: 768px) {
+  .nav {
+    display: flex;
+    padding: 0.5% 10%;
+  }
+}
+@media (min-width: 1200px) {
+  .nav {
+    padding: 0.5% 12%;
+  }
+}
+.topnav {
+  background-color: #272a31;
+  padding: 0 10%;
+  display: none;
+  justify-content: flex-end;
+  align-items: center;
+}
+.topnav__link {
+  color: #fff;
+  padding-right: 2%;
+}
+
+@media (min-width: 768px) {
+  .topnav {
+    display: flex;
+  }
+}
+@media (min-width: 1200px) {
+  .topnav {
+    padding: 0 12%;
+  }
+}
 .button {
   background-color: #fe4e37;
   transition: background-color 0.4s ease-in;
@@ -145,15 +223,12 @@ h4,
   border-radius: 0.3em;
   text-align: center;
 }
-
 .button:hover {
   background-color: rgba(254, 78, 55, 0.8);
 }
-
 .button--sm {
   font-size: 0.8em;
 }
-
 .button--lg {
   padding: 1.2em 0.8em;
 }
@@ -165,29 +240,24 @@ h4,
   flex-direction: column;
   align-items: flex-start;
 }
-
 .title--about {
   align-items: center;
   text-align: center;
 }
-
 .title__slogan {
   color: #fe4e37;
   font-size: 1.2em;
   margin-bottom: 0.6em;
 }
-
 .title__p {
   background: #f1f1f1;
   padding: 0.5em;
   border: 4px solid #fff;
   margin: 2em 0;
 }
-
 .title__address {
   margin-top: 0.6em;
 }
-
 .title__email {
   font-weight: 600;
 }
@@ -206,17 +276,29 @@ h4,
   right: 0;
 }
 
+@media (min-width: 768px) {
+  .title {
+    padding: 10% 25% 10% 10%;
+  }
+
+  .title__slogan--about {
+    display: none;
+  }
+}
+@media (min-width: 1200px) {
+  .title {
+    padding: 10% 25% 10% 12%;
+  }
+}
 .partner {
   background-color: #272a31;
   text-align: center;
 }
-
 .partner__title {
   color: #fff;
   font-weight: 700;
   letter-spacing: 0.1em;
 }
-
 .partner__wrapper {
   display: flex;
   flex-wrap: wrap;
@@ -224,23 +306,26 @@ h4,
   filter: grayscale(1);
   gap: 5%;
 }
-
 .partner__item {
   width: 30%;
   height: auto;
   margin-bottom: 5%;
 }
 
+@media (min-width: 768px) {
+  .partner__item {
+    margin-bottom: 0;
+    flex: 1;
+  }
+}
 .features {
   background: url("../img/background-gray.png") no-repeat;
   background-size: cover;
 }
-
 .features__title {
   color: white;
   text-align: center;
 }
-
 .features__button {
   margin: 10% 5% 5% 5%;
   width: 80%;
@@ -250,21 +335,19 @@ h4,
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 0.8em;
+  gap: 0.6em;
   margin-top: 0.8em;
   background: rgba(255, 255, 255, 0.1);
-  padding: 0.8em;
+  padding: 0.6em;
 }
-
 .features-item__title {
   color: #fe4e37;
-  font-size: 1.1em;
+  font-size: 1em;
   flex-basis: 30%;
 }
-
 .features-item__p {
   color: #fff;
-  font-size: 0.8em;
+  font-size: 0.7em;
   flex-basis: 50%;
 }
 
@@ -272,24 +355,31 @@ h4,
   .features-item {
     flex-direction: column;
   }
-}
 
+  .features__button {
+    background: none;
+    margin: 5% 0 0 0;
+    width: 95%;
+    text-decoration: underline;
+  }
+
+  .features__button:hover {
+    background: none;
+  }
+}
 .team {
   background: #fff;
 }
-
 .team__wrapper {
   display: flex;
   gap: 4%;
   margin-bottom: 10%;
   position: relative;
 }
-
 .team__image-wrapper {
   width: 40%;
   position: relative;
 }
-
 .team__image {
   width: 90%;
   height: auto;
@@ -297,11 +387,9 @@ h4,
   padding: 8% 0 0 8%;
   z-index: 10;
 }
-
 .team__content {
   width: 56%;
 }
-
 .team__image-span {
   position: absolute;
   top: 0;
@@ -309,21 +397,17 @@ h4,
   width: 60px;
   height: 60px;
 }
-
 .team__title {
   font-weight: 800;
   letter-spacing: 1px;
 }
-
 .team__spesification {
   color: #fe4e37;
 }
-
 .team__p {
-  font-size: 0.8em;
+  font-size: 0.7em;
   line-height: 120%;
 }
-
 .team__hr {
   width: 20%;
   color: #d3d3d3;
@@ -337,11 +421,9 @@ h4,
   font-weight: 600;
   letter-spacing: 0.1em;
 }
-
 .approving__time {
   font-weight: 900;
 }
-
 .approving__image {
   width: 90%;
   height: auto;
@@ -350,23 +432,25 @@ h4,
   margin-top: 3%;
 }
 
+@media (min-width: 768px) {
+  .approving__image {
+    width: 50%;
+  }
+}
 .services {
   background: #fff;
   text-align: center;
   border-top: 2px solid #d3d3d3;
-  padding-top: 10%;
+  padding-top: 5%;
 }
-
 .services__p {
   line-height: 120%;
   font-size: 0.9em;
 }
-
 .services__wrapper {
   position: relative;
-  margin: 5% 0;
+  margin: 5% 0 0 0;
 }
-
 .services__wrapper::after {
   content: "";
   position: absolute;
@@ -376,12 +460,10 @@ h4,
   left: 0;
   background: rgba(254, 78, 55, 0.7);
 }
-
 .services__image {
   width: 100%;
   height: auto;
 }
-
 .services__image-p {
   text-align: center;
   position: absolute;
@@ -394,3 +476,5 @@ h4,
   font-size: 1.3em;
   text-transform: uppercase;
 }
+
+/*# sourceMappingURL=app.css.map */
