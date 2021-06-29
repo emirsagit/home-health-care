@@ -3,11 +3,11 @@
 }
 
 @mixin hover($property, $color) {
-  #{$property}: rgba($color, 0.8);
+  #{$property}: $color;
 
   @include transition($property, 0.4s, ease-in);
 
   &:hover {
-    #{$property}: $color;
+    #{$property}: rgba($color, 0.8);
   }
 }

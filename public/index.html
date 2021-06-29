@@ -6,31 +6,157 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="./css/app.css" />
     <title>Home Health Care</title>
   </head>
   <body>
     <header>
-      <nav class="nav">
-        <button class="nav__button">
-          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M4 6h16M4 12h16M4 18h16" />
-          </svg>
-        </button>
-      </nav>
-      <!-- <div class="icons">
-        <img class="icons__1" src="./img/icons/1.svg"></img>
-        <img class="icons__2" src="./img/icons/2.svg"></img>
-        <img class="icons__3" src="./img/icons/3.svg"></img>
-        <img class="icons__4" src="./img/icons/4.svg"></img>
-        <img class="icons__5" src="./img/icons/5.svg"></img>
-        <img class="icons__6" src="./img/icons/6.svg"></img>
-        <img class="icons__7" src="./img/icons/7.svg"></img>
-        <img class="icons__8" src="./img/icons/8.svg"></img>
-        <img class="icons__9" src="./img/icons/9.svg"></img>
-        <img class="icons__10" src="./img/icons/10.svg"></img>
-      </div> -->
+      <button class="global-hamburger">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+      <nav class="nav"></nav>
     </header>
+    <section class="title">
+      <p class="title__slogan">Keeping You Well!</p>
+      <h1>ANGEL HOME HEALTH CARE SERVICE</h1>
+      <p class="title__p">Home Healthcare Service is meeting the health, care, and rehabilitation needs of patients or individuals who in need of care where they live in.</p>
+      <p class="h3">7 / 24 SERVICE</p>
+      <p class="title__address">@ 34330 Levent, Istanbul</p>
+    </section>
+    <section class="features">
+      <p class="h4 features__title">Why Us?</p>
+      <hr />
+      <div class="layout-grid">
+        <div class="layout-grid__column layout-grid--features">
+          <div class="features-item">
+            <img src="./img/icons/10.svg" alt="icon" />
+            <p class="features-item__title">7 / 24 Service</p>
+            <p class="features-item__p">Quamquam tu hanc copiosiorem etiam soles dicere. At hoc in eo M. De illis</p>
+          </div>
+        </div>
+        <div class="layout-grid__column layout-grid--features">
+          <div class="features-item">
+            <img src="./img/icons/8.svg" alt="icon" />
+            <p class="features-item__title">Expert Team</p>
+            <p class="features-item__p">Quamquam tu hanc copiosiorem etiam soles dicere. At hoc in eo M. De illis</p>
+          </div>
+        </div>
+        <div class="layout-grid__column layout-grid--features">
+          <div class="features-item">
+            <img src="./img/icons/3.svg" alt="icon" />
+            <p class="features-item__title">Fast Service</p>
+            <p class="features-item__p">Quamquam tu hanc copiosiorem etiam soles dicere. At hoc in eo M. De illis</p>
+          </div>
+        </div>
+        <div class="layout-grid__column layout-grid--features">
+          <div class="features-item">
+            <img src="./img/icons/4.svg" alt="icon" />
+            <p class="features-item__title">Modern Equipment</p>
+            <p class="features-item__p">Quamquam tu hanc copiosiorem etiam soles dicere. At hoc in eo M. De illis</p>
+          </div>
+        </div>
+        <div class="layout-grid__column layout-grid--features">
+          <div class="features-item">
+            <img src="./img/icons/5.svg" alt="icon" />
+            <p class="features-item__title">Reliable</p>
+            <p class="features-item__p">Quamquam tu hanc copiosiorem etiam soles dicere. At hoc in eo M. De illis</p>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="button button--lg features__button"> Send A Message </a>
+    </section>
+    <section class="team">
+      <p class="h4 text-center">Our Team</p>
+      <hr />
+      <div class="layout-grid">
+        <div class="layout-grid__column">
+          <div class="team__wrapper">
+            <div class="team__image-wrapper">
+              <img src="./img/profile/1.jpg" alt="profile" class="team__image" />
+              <img src="../img/black-white.jpg" alt="black-white" class="team__image-span" />
+            </div>
+            <div class="team__content">
+              <p class="team__title">Prof. John Doe, M.D.</p>
+              <p class="team__spesification">Emergency Service</p>
+              <hr class="team__hr" />
+              <p class="team__p">Lumbar and cervical disc herniation, spinal canal stenosis and spinal cord tumors, cerebrovascular diseases and brain tumors are areas of interest.</p>
+            </div>
+          </div>
+        </div>
+        <div class="layout-grid__column">
+          <div class="team__wrapper">
+            <div class="team__image-wrapper">
+              <img src="./img/profile/2.jpg" alt="profile" class="team__image" />
+              <img src="../img/black-white.jpg" alt="black-white" class="team__image-span" />
+            </div>
+            <div class="team__content">
+              <p class="team__title">Dr. Emily Star, M.D.</p>
+              <p class="team__spesification">General Surgery</p>
+              <hr class="team__hr" />
+              <p class="team__p">Abdominal contents including esophagus, stomach, small intestine, large intestine, liver, pancreas, gallbladder, appendix and bile ducts are areas of interest.</p>
+            </div>
+          </div>
+        </div>
+        <div class="layout-grid__column">
+          <div class="team__wrapper">
+            <div class="team__image-wrapper">
+              <img src="./img/profile/3.jpg" alt="profile" class="team__image" />
+              <img src="../img/black-white.jpg" alt="black-white" class="team__image-span" />
+            </div>
+            <div class="team__content">
+              <p class="team__title">Nicolas Brown</p>
+              <p class="team__spesification">Public Relations</p>
+              <hr class="team__hr" />
+              <p class="team__p">Director of Human Resources and Public Relations</p>
+            </div>
+          </div>
+        </div>
+        <div class="layout-grid__column">
+          <div class="team__wrapper">
+            <div class="team__image-wrapper">
+              <img src="./img/profile/4.jpg" alt="profile" class="team__image" />
+              <img src="../img/black-white.jpg" alt="black-white" class="team__image-span" />
+            </div>
+            <div class="team__content">
+              <p class="team__title">Mariam Sarkozy</p>
+              <p class="team__spesification">Nurse</p>
+              <hr class="team__hr" />
+              <p class="team__p">Director of Patient Care and Home Health Care</p>
+            </div>
+          </div>
+        </div>
+        <div class="layout-grid__column">
+          <div class="team__wrapper">
+            <div class="team__image-wrapper">
+              <img src="./img/profile/5.jpg" alt="profile" class="team__image" />
+              <img src="../img/black-white.jpg" alt="black-white" class="team__image-span" />
+            </div>
+            <div class="team__content">
+              <p class="team__title">Jonathan Elafe</p>
+              <p class="team__spesification">Technical Specialists</p>
+              <hr class="team__hr" />
+              <p class="team__p">Director of Medical Equipment and Devices</p>
+            </div>
+          </div>
+        </div>
+        <div class="layout-grid__column">
+          <div class="team__wrapper">
+            <div class="team__image-wrapper">
+              <img src="./img/profile/6.jpg" alt="profile" class="team__image" />
+              <img src="../img/black-white.jpg" alt="black-white" class="team__image-span" />
+            </div>
+            <div class="team__content">
+              <p class="team__title">Emir Sağıt</p>
+              <p class="team__spesification">Software Engineer</p>
+              <hr class="team__hr" />
+              <p class="team__p">Information Technology Director</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
