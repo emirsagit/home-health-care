@@ -13,6 +13,30 @@
   font-family: "Cocogoose";
   src: url("./fonts/Cocogoose-Pro-trial.ttf") format("truetype");
 }
+/* lato-regular - latin */
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""), url("./fonts/lato-v17-latin-regular.woff2") format("woff2"), url("./fonts/lato-v17-latin-regular.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* lato-700 - latin */
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  src: local(""), url("./fonts/lato-v17-latin-700.woff2") format("woff2"), url("./fonts/lato-v17-latin-700.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* lato-900 - latin */
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 900;
+  src: local(""), url("./fonts/lato-v17-latin-900.woff2") format("woff2"), url("./fonts/lato-v17-latin-900.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
 body {
   font-family: "Lato", sans-serif;
   font-size: 100%;
@@ -88,7 +112,7 @@ hr {
 
 @media (min-width: 768px) {
   body {
-    font-size: 150%;
+    font-size: 120%;
   }
 
   section,
@@ -104,6 +128,10 @@ footer {
   section,
 footer {
     padding: 5% 12%;
+  }
+
+  body {
+    font-size: 140%;
   }
 }
 h1,
@@ -459,7 +487,7 @@ h4,
 }
 .features-item__p {
   color: #fff;
-  font-size: 0.7em;
+  font-size: 0.9em;
   flex-basis: 50%;
 }
 
@@ -517,7 +545,7 @@ h4,
   color: #fe4e37;
 }
 .team__p {
-  font-size: 0.7em;
+  font-size: 0.8em;
   line-height: 120%;
 }
 .team__hr {

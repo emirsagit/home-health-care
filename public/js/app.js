@@ -26,6 +26,6 @@ function toggle() {
   }
 }
 
-for (let i = 0; i < toggleElements.length; i = +1) {
+for (let i = 0; i < toggleElements.length; i += 1) {
   document.getElementById(toggleElements[i]).addEventListener('click', toggle);
 }
