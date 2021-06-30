@@ -11,9 +11,11 @@
 - HTML & CSS (Sass) & JavaScript
 - Used Linters(Lighthouse, stylelint, Webhint)
 
-## Icons
 
-- I used Icons from [Flaticon](https://www.flaticon.com/)
+## Acknowledgments
+
+- UI Design Credits goes to [Cindy Shin - CC Global Summit 2015](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015)
+- Icons from [Flaticon](https://www.flaticon.com/)
 - Background photos from [Canva](https://www.canva.com/)
 
 ## Live Demo

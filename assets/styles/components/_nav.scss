@@ -33,16 +33,16 @@
     margin-bottom: 2%;
   }
 
+  &__close {
+    align-self: flex-end;
+    margin-right: 10px;
+    color: $third;
+  }
+
   &__link {
     font-size: 0.8em;
     padding: 0.4em 2em;
     cursor: pointer;
-  }
-
-  .nav__close {
-    align-self: flex-end;
-    margin-right: 10px;
-    color: $third;
   }
 
   &__link--border {
@@ -72,6 +72,10 @@
     border-right: 0;
   }
 
+  .nav__link {
+    padding: 0.4em 1.2em;
+  }
+
   .nav__logo {
     width: 70%;
     height: auto;
@@ -83,14 +87,14 @@
   }
 
   .nav__list {
-    width: 80%;
+    width: 70%;
     display: flex;
     justify-content: flex-end;
     flex-direction: row;
   }
 
   .nav__item {
-    margin-left: 3%;
+    margin-left: 2%;
     margin-bottom: 0;
   }
 }
@@ -98,5 +102,9 @@
 @media (min-width: 1200px) {
   .nav {
     padding: 0.5% $section-padding-desktop-large;
+  }
+
+  .nav__link {
+    padding: 0.4em 2em;
   }
 }
