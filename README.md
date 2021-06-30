@@ -1,29 +1,28 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# My Portfolio
+# Home Health Care Center Landing Page
 
-> It's a basic portfolio website with all features 
+> This is a home health care center center landing page. The website contains two pages the home page and, the about us page. Design idea by [Cindy Shin](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015) in Behance.
 
 ![screenshot](./app_screenshot.png)
 
 ## Built With
 
-- HTML & CSS
-- Github workflow
-- Linters(Lighthouse, stylelint, Webhint)
+- HTML & CSS (Sass) & JavaScript
+- Used Linters(Lighthouse, stylelint, Webhint)
+
+## Icons
+
+- I used Icons from [Flaticon](https://www.flaticon.com/)
 
 ## Live Demo
 
-[Live Demo Link](https://emirsagit.github.io/my-portfolio/)
+[Live Demo Link](https://emirsagit.github.io/home-health-care/)
 
 
 ## Getting Started
 
-To get a local copy up and running follow these simple example steps.
-
-``` git clone https://github.com/emirsagit/my-portfolio.git ```
-
-``` cd my-portfolio ```
+To get a local copy up and running you only need to clone this repository and open index.html
 
 ## Authors
 
