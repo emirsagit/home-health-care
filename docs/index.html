@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preload" as="font" href="./css/fonts.css" />
     <link rel="stylesheet" href="./css/app.css" />
     <title>Senoma Home Health Care</title>
   </head>
@@ -35,6 +36,12 @@
           </li>
           <li class="nav__item">
             <a href="./about.html" class="nav__link" id="about">About</a>
+          </li>
+          <li class="nav__item">
+            <a href="./about.html?#services" class="nav__link" id="nav_services">Services</a>
+          </li>
+          <li class="nav__item">
+            <a href="./index.html?#staff" class="nav__link" id="nav_team">Team</a>
           </li>
         </ul>
       </nav>
@@ -91,12 +98,11 @@
       </div>
       <a href="#" class="button button--lg features__button">Contact Us</a>
     </section>
-    <section class="team">
+    <section class="team" id="staff">
       <h2 class="h4 text-center">Our Team</h2>
       <hr />
       <!-- below section elements are created dynamically with javascript -->
-      <div class="layout-grid" id="team">
-      </div>
+      <div class="layout-grid" id="team"></div>
     </section>
     <section class="partner">
       <h2 class="partner__title">Contracted Institutions</h2>

@@ -13,41 +13,6 @@
 /**
  * Globals
  */
-@font-face {
-  font-family: "Cocogoose";
-  src: url("./fonts/Cocogoose-Pro-trial.ttf") format("truetype");
-}
-
-/* lato-regular - latin */
-@font-face {
-  font-family: "Lato";
-  font-style: normal;
-  font-weight: 400;
-  src: local(""), url("./fonts/lato-v17-latin-regular.woff2") format("woff2"), url("./fonts/lato-v17-latin-regular.woff") format("woff");
-
-  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-
-/* lato-700 - latin */
-@font-face {
-  font-family: "Lato";
-  font-style: normal;
-  font-weight: 700;
-  src: local(""), url("./fonts/lato-v17-latin-700.woff2") format("woff2"), url("./fonts/lato-v17-latin-700.woff") format("woff");
-
-  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-
-/* lato-900 - latin */
-@font-face {
-  font-family: "Lato";
-  font-style: normal;
-  font-weight: 900;
-  src: local(""), url("./fonts/lato-v17-latin-900.woff2") format("woff2"), url("./fonts/lato-v17-latin-900.woff") format("woff");
-
-  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-
 body {
   font-family: "Lato", sans-serif;
   font-size: 100%;
@@ -262,16 +227,16 @@ h4,
   margin-bottom: 2%;
 }
 
+.nav__close {
+  align-self: flex-end;
+  margin-right: 10px;
+  color: #272a31;
+}
+
 .nav__link {
   font-size: 0.8em;
   padding: 0.4em 2em;
   cursor: pointer;
-}
-
-.nav .nav__close {
-  align-self: flex-end;
-  margin-right: 10px;
-  color: #272a31;
 }
 
 .nav__link--border {
@@ -299,6 +264,10 @@ h4,
     border-right: 0;
   }
 
+  .nav__link {
+    padding: 0.4em 1.2em;
+  }
+
   .nav__logo {
     width: 70%;
     height: auto;
@@ -310,14 +279,14 @@ h4,
   }
 
   .nav__list {
-    width: 80%;
+    width: 70%;
     display: flex;
     justify-content: flex-end;
     flex-direction: row;
   }
 
   .nav__item {
-    margin-left: 3%;
+    margin-left: 2%;
     margin-bottom: 0;
   }
 }
@@ -325,6 +294,10 @@ h4,
 @media (min-width: 1200px) {
   .nav {
     padding: 0.5% 12%;
+  }
+
+  .nav__link {
+    padding: 0.4em 2em;
   }
 }
 
@@ -665,16 +638,6 @@ h4,
   margin: 5% 0 0 0;
 }
 
-.services__wrapper::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  background: rgba(254, 78, 55, 0.7);
-}
-
 .services__image {
   width: 100%;
   height: auto;
@@ -683,8 +646,10 @@ h4,
 .services__image-p {
   text-align: center;
   position: absolute;
+  padding-top: 60px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.85), transparent);
   color: #fff;
-  top: 45%;
+  bottom: 0;
   left: 0;
   right: 0;
   z-index: 1;

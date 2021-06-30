@@ -2,7 +2,7 @@
 
 # Home Health Care Center Landing Page
 
-> This is a home health care center landing page. The website contains two pages, the home page and, the about us page. Design idea by [Cindy Shin](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015) in Behance.
+> This is a home health care center landing page. The website contains two pages, the home page and, the about us page. Design idea by [Cindy Shin](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015) in Behance. 
 
 ![screenshot](./app_screenshot.png)
 
@@ -11,14 +11,19 @@
 - HTML & CSS (Sass) & JavaScript
 - Used Linters(Lighthouse, stylelint, Webhint)
 
-## Icons
 
-- I used Icons from [Flaticon](https://www.flaticon.com/)
+## Acknowledgments
+
+- UI Design Credits goes to [Cindy Shin - CC Global Summit 2015](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015)
+- Icons from [Flaticon](https://www.flaticon.com/)
+- Background photos from [Canva](https://www.canva.com/)
 
 ## Live Demo
 
 [Live Demo Link](https://emirsagit.github.io/home-health-care/)
 
+## Video Description
+[Video Description](https://www.loom.com/share/c037a21034934206b9b808898c36c9de)
 
 ## Getting Started
 
