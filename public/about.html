@@ -8,11 +8,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="./css/app.css" />
-    <title>Home Health Care About Us</title>
+    <title>Senoma Home Health Care About Us</title>
   </head>
   <body>
     <header>
-      <button class="global-hamburger">
+      <button class="global-hamburger" id="hamburger" type="button">
         <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" viewBox="0 0 24 24" stroke="currentColor">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M4 6h16M4 12h16M4 18h16" />
         </svg>
@@ -25,8 +25,13 @@
           ><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" viewBox="0 0 512 512"><path d="M512 97.248c-19.04 8.352-39.328 13.888-60.48 16.576 21.76-12.992 38.368-33.408 46.176-58.016-20.288 12.096-42.688 20.64-66.56 25.408C411.872 60.704 384.416 48 354.464 48c-58.112 0-104.896 47.168-104.896 104.992 0 8.32.704 16.32 2.432 23.936-87.264-4.256-164.48-46.08-216.352-109.792-9.056 15.712-14.368 33.696-14.368 53.056 0 36.352 18.72 68.576 46.624 87.232-16.864-.32-33.408-5.216-47.424-12.928v1.152c0 51.008 36.384 93.376 84.096 103.136-8.544 2.336-17.856 3.456-27.52 3.456-6.72 0-13.504-.384-19.872-1.792 13.6 41.568 52.192 72.128 98.08 73.12-35.712 27.936-81.056 44.768-130.144 44.768-8.608 0-16.864-.384-25.12-1.44C46.496 446.88 101.6 464 161.024 464c193.152 0 298.752-160 298.752-298.688 0-4.64-.16-9.12-.384-13.568 20.832-14.784 38.336-33.248 52.608-54.496z" /></svg>
         </a>
       </div>
-      <nav class="nav">
-        <img src="./img/logo.png" alt="logo" width="385" height="125" class="nav__logo" />
+      <nav class="nav nav--mobile-hidden" id="nav">
+        <button class="nav__close" id="close-button" type="button">
+          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+        <a href="/"><img src="./img/logo.png" alt="logo" width="385" height="125" class="nav__logo" /></a>
         <ul class="nav__list">
           <li class="nav__item">
             <a href="/" class="nav__link" id="home">Home</a>
@@ -39,13 +44,13 @@
     </header>
     <section class="title title--about">
       <p class="title__slogan title__slogan--about">Keeping You Well!</p>
-      <h1>ANGEL HOME HEALTH CARE SERVICE</h1>
-      <p class="title__p">Angel Home Health Care, rendering services since 2009 as a ‘Home Care Center’ licensed by the Ministry of Health is a health institution that provides families with in-home health, care and training services throughout Turkey. Our homecare center has embraced approximately 80.000 patients and their relatives until present day.</p>
+      <h1>SENOMA HOME HEALTH CARE SERVICE</h1>
+      <p class="title__p">Senoma Home Health Care, rendering services since 2009 as a ‘Home Care Center’ licensed by the Ministry of Health is a health institution that provides families with in-home health, care, and training services throughout Turkey. Our homecare center has embraced approximately 80.000 patients and their relatives until the present day.</p>
       <p class="title__address">Please contact us via email for any questions.</p>
       <a class="title__email" href="mailto:info@angelhomehealthcare.com">info@angelhomehealthcare.com</a>
     </section>
     <section class="approving">
-      <p class="approving__title">Health Of Ministry Approved</p>
+      <h2 class="approving__title">Ministry of Health Approved</h2>
       <p class="approving__time">Since @2013</p>
       <hr />
       <img class="approving__image" src="./img/turkish-ministry-of-health.png" width="512" height="512" alt="ministry of health logo" />
@@ -74,7 +79,7 @@
       </div>
     </section>
     <section class="partner">
-      <p class="partner__title">Contracted Institutions</p>
+      <h2 class="partner__title">Contracted Institutions</h2>
       <hr />
       <div class="partner__wrapper">
         <img src="./img/partner/mcdonalds.png" alt="mcdonalds" class="partner__item" width="600" height="401" />
