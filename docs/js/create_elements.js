@@ -109,7 +109,7 @@ for (let i = 0; i < items.length; i += 1) {
                 element: 'img',
                 classes: ['team__image-span'],
                 attributes: {
-                  src: '../img/black-white.jpg',
+                  src: './img/black-white.jpg',
                   alt: 'black-white',
                 },
               },

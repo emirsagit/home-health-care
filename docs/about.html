@@ -4,8 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="./css/app.css" />
-    <title>Senoma Home Health Care</title>
+    <title>Senoma Home Health Care About Us</title>
   </head>
   <body>
     <header>
@@ -28,10 +31,10 @@
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
           </svg>
         </button>
-        <a href="/"><img src="./img/logo.png" alt="logo" width="385" height="125" class="nav__logo" /></a>
+        <a href="./index.html"><img src="./img/logo.png" alt="logo" width="385" height="125" class="nav__logo" /></a>
         <ul class="nav__list">
           <li class="nav__item">
-            <a href="/" class="nav__link" id="home">Home</a>
+            <a href="./index.html" class="nav__link" id="home">Home</a>
           </li>
           <li class="nav__item">
             <a href="./about.html" class="nav__link" id="about">About</a>
@@ -39,63 +42,43 @@
         </ul>
       </nav>
     </header>
-    <section class="title title--home">
-      <p class="title__slogan">Keeping You Well!</p>
-      <h1 class="title__h1">
+    <section class="title title--about">
+      <p class="title__slogan title__slogan--about">Keeping You Well!</p>
+      <h1>
         SENOMA HOME <br />
         HEALTH CARE SERVICE
       </h1>
-      <p class="title__p">Home Healthcare Service is meeting the health, care, and rehabilitation needs of patients or individuals who in need of care where they live in.</p>
-      <p class="h3">7 / 24 SERVICE</p>
-      <p class="title__address">@ <span class="coco">LEVENT, ISTANBUL</span></p>
+      <p class="title__p">Senoma Home Health Care, rendering services since 2009 as a ‘Home Care Center’ licensed by the Ministry of Health is a health institution that provides families with in-home health, care, and training services throughout Turkey. Our homecare center has embraced approximately 80.000 patients and their relatives until the present day.</p>
+      <p class="title__address">Please contact us via email for any questions.</p>
+      <a class="title__email" href="mailto:info@angelhomehealthcare.com">info@angelhomehealthcare.com</a>
     </section>
-    <section class="features">
-      <h2 class="h4 features__title">Why Us?</h2>
+    <section class="approving">
+      <h2 class="approving__title">Ministry of Health Approved</h2>
+      <p class="approving__time">Since @2013</p>
       <hr />
-      <div class="layout-grid layout-grid--features">
-        <div class="layout-grid__column layout-grid--col-features">
-          <div class="features-item">
-            <img src="./img/icons/10.svg" alt="icon" />
-            <p class="features-item__title">7 / 24 Service</p>
-            <p class="features-item__p">We are on 24×7 standby for expert care during a medical emergency.</p>
-          </div>
-        </div>
-        <div class="layout-grid__column layout-grid--col-features">
-          <div class="features-item">
-            <img src="./img/icons/8.svg" alt="icon" />
-            <p class="features-item__title">Expert Team</p>
-            <p class="features-item__p">There is always easy and swift access to our specialist doctors and nurses.</p>
-          </div>
-        </div>
-        <div class="layout-grid__column layout-grid--col-features">
-          <div class="features-item">
-            <img src="./img/icons/3.svg" alt="icon" />
-            <p class="features-item__title">Fast Service</p>
-            <p class="features-item__p">We bring the health service to your home as you call us. We never late.</p>
-          </div>
-        </div>
-        <div class="layout-grid__column layout-grid--col-features">
-          <div class="features-item">
-            <img src="./img/icons/4.svg" alt="icon" />
-            <p class="features-item__title">Modern</p>
-            <p class="features-item__p">Our equipment is modern. We can bring them to your home when needed.</p>
-          </div>
-        </div>
-        <div class="layout-grid__column layout-grid--col-features">
-          <div class="features-item">
-            <img src="./img/icons/5.svg" alt="icon" />
-            <p class="features-item__title">Reliable</p>
-            <p class="features-item__p">Our staff is professional and expert. They always tell you the truth.</p>
-          </div>
-        </div>
-      </div>
-      <a href="#" class="button button--lg features__button">Contact Us</a>
+      <img class="approving__image" src="./img/turkish-ministry-of-health.png" width="512" height="512" alt="ministry of health logo" />
     </section>
-    <section class="team">
-      <h2 class="h4 text-center">Our Team</h2>
+    <section class="services">
+      <h2 class="h4">See Our Services</h2>
       <hr />
-      <!-- below section elements are created dynamically with javascript -->
-      <div class="layout-grid" id="team">
+      <p class="services__p">Our service is supplied by doctors and nurses for all fields of health. You can find our most common services below.</p>
+      <div class="layout-grid">
+        <div class="layout-grid__column services__wrapper">
+          <img src="./img/services/patient-care.jpg" alt="patient care" width="1920" height="1080" class="services__image" />
+          <p class="services__image-p">PATIENT CARE</p>
+        </div>
+        <div class="layout-grid__column services__wrapper">
+          <img src="./img/services/online-consultation.jpg" alt="online consultation" width="1920" height="1080" class="services__image" />
+          <p class="services__image-p">ONLINE DOCTOR</p>
+        </div>
+        <div class="layout-grid__column services__wrapper">
+          <img src="./img/services/rehabilitation.jpg" alt="rehabilitation" width="1920" height="1080" class="services__image" />
+          <p class="services__image-p">REHABILITATION</p>
+        </div>
+        <div class="layout-grid__column services__wrapper">
+          <img src="./img/services/ambulance.jpg" alt="patient transport" width="1920" height="1080" class="services__image" />
+          <p class="services__image-p">PATIENT TRANSPORT</p>
+        </div>
       </div>
     </section>
     <section class="partner">
@@ -111,6 +94,5 @@
     </section>
 
     <script src="./js/app.js"></script>
-    <script src="./js/create_elements.js"></script>
   </body>
 </html>
