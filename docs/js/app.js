@@ -2,9 +2,9 @@
  * Add css border to nav element for displaying current page
  */
 const path = window.location.pathname;
-if (path === '/') {
+if (path === '/' || path === '/home-health-care/index.html' || path === '/index.html') {
   document.getElementById('home').classList.add('nav__link--border');
-} else if (path === '/about.html') {
+} else if (path === '/about.html' || path === '/home-health-care/about.html') {
   document.getElementById('about').classList.add('nav__link--border');
 }
 

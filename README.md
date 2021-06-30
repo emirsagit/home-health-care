@@ -2,7 +2,7 @@
 
 # Home Health Care Center Landing Page
 
-> This is a home health care center center landing page. The website contains two pages the home page and, the about us page. Design idea by [Cindy Shin](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015) in Behance.
+> This is a home health care center landing page. The website contains two pages, the home page and, the about us page. Design idea by [Cindy Shin](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015) in Behance.
 
 ![screenshot](./app_screenshot.png)
 
