@@ -3,7 +3,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 3%;
-  justify-content: center;
+  justify-content: stretch;
 
   &__column {
     flex-basis: 768px;
@@ -20,7 +20,7 @@
 @media (min-width: 1200px) {
   .layout-grid--col-features {
     flex: 1;
-    height: 100%;
+    display: flex;
   }
 
   .layout-grid--features {

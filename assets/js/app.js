@@ -16,12 +16,12 @@ const toggleElements = ['hamburger', 'close-button', 'home', 'about'];
 const nav = document.getElementById('nav');
 function toggle() {
   if (!nav.classList.contains('nav--mobile-hidden')) {
-    nav.style.animation = 'close 1s ease-in-out';
+    nav.style.animation = 'close .5s ease-in-out';
     setTimeout(() => {
       nav.classList.toggle('nav--mobile-hidden');
-    }, 1000);
+    }, 500);
   } else {
-    nav.style.animation = 'open 1s ease-in-out';
+    nav.style.animation = 'open .5s ease-in-out';
     nav.classList.toggle('nav--mobile-hidden');
   }
 }
